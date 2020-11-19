@@ -1,3 +1,4 @@
+{{ if test }}
 ---
 apiVersion: v1
 kind: Service
@@ -31,3 +32,4 @@ spec:
     app: zookeeper
   sessionAffinity: None
   type: ClusterIP
+{{ end }}
